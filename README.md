@@ -1,5 +1,7 @@
 # query
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/amarin/query.svg)](https://pkg.go.dev/github.com/amarin/query)
+
 Query implements SQL query builder for Go.
 The aim is to provide fast and simple interface to database functions without need to write SQL code at all.
 
@@ -8,7 +10,7 @@ Main features:
 - supporting SELECT (and SELECT COUNT() as subset of SELECT), INSERT, UPDATE and DELETE queries;
 - supporting fields conditions to use in SELECT/UPDATE/DELETE queries;
 - supporting field and table names aliasing;
-- supporting tables JOIN's keeping syntax as close to SQL as possible;
+- supporting tables JOIN's keeping Golang syntax as close to SQL as possible;
 - provides string types to wrap table and field names constants allows to keep all definitions in single place and avoid mistypings;
 - generated queries could use either '?' or '$N' placeholders depending on your needs;
 - supporting conditionals building over single or several joined tables using complex conditions
@@ -30,6 +32,3 @@ Not really a builders but are the SQL helpers and ORM packages:
 - [GORP](https://github.com/go-gorp/gorp) - provides a simple way to marshal Go structs to and from SQL databases. It uses the database/sql package, and should work with any compliant database/sql driver
 - [GORM](https://github.com/go-gorm/gorm) - fantastic ORM library for Golang, aims to be developer friendly.
 
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  
