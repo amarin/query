@@ -65,6 +65,7 @@ func (fieldValue FieldValue) Values() (result []interface{}) {
 
 		return result
 	}
+
 	// no known types is found, check if array of elements implemented driver.Valuer received,
 	// and translate using driver.Valuer when possible.
 	valueReflection := reflect.ValueOf(fieldValue.value)
