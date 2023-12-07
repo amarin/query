@@ -21,6 +21,8 @@ func (valuesMap ValuesMap) FieldValues() ([]FieldValue, error) {
 			return nil, errors.Join(fmt.Errorf("%w: invalid field name `%v`", Error, k), err)
 		}
 		res[idx] = *NewFieldValue(fieldName, v)
+
+		idx++
 	}
 
 	return res, nil
