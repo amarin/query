@@ -1,3 +1,7 @@
+// Package query provides database queries build helpers.
+//
+// It helps to simplify query building for relation database CRUD operations,
+// especially in cases when used fields set will be known only in runtime, not on developments stage.
 package query
 
 import (
